@@ -1,0 +1,161 @@
+{
+	"info": {
+		"_postman_id": "fc241cf5-7a55-4b31-ac52-2da85f903121",
+		"name": "react-images",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "17759460"
+	},
+	"item": [
+		{
+			"name": "create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "uploadimages",
+							"type": "file",
+							"src": "/C:/Users/Admin/Downloads/Men_Pistols_The_Indian_films_Petta__Rajinikanth_609499_4096x2048.jpg"
+						},
+						{
+							"key": "uploadimages",
+							"type": "file",
+							"src": "/C:/Users/Admin/Downloads/Banner 1.1 (1).jpg"
+						},
+						{
+							"key": "uploadimages",
+							"type": "file",
+							"src": "/C:/Users/Admin/Downloads/SampleJPGImage_1mbmb.jpg"
+						},
+						{
+							"key": "uploadimages",
+							"type": "file",
+							"src": "/C:/Users/Admin/Downloads/2.jpg"
+						},
+						{
+							"key": "uploadimages",
+							"type": "file",
+							"src": "/C:/Users/Admin/Downloads/3.jpg"
+						},
+						{
+							"key": "uploadimages",
+							"type": "file",
+							"src": "/C:/Users/Admin/Downloads/1.jpg"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8081/api/module/create",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"module",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/api/module/delete/6",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"module",
+						"delete",
+						"6"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"featured\":1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/api/module/update/5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"module",
+						"update",
+						"5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/api/module/all-images",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"module",
+						"all-images"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "featured",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/api/module/favourite",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"module",
+						"favourite"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
